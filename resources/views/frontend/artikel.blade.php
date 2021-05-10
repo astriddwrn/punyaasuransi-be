@@ -20,8 +20,6 @@
      <meta name="apple-mobile-web-app-status-bar-style" content="black">
      <meta name="apple-mobile-web-app-title" content="Artikel | punyaAsuransi.com">
      
-
-
      <meta name="description" content="Kumpulan artikel dari punyaAsuransi.com yang membahas mengenai asuransi, keuangan, lifestyle, dan bisnis">
      <!-- favicon -->
      <link rel = "icon" href = "/resources/logo/logo.png" type = "image/x-icon">
@@ -40,6 +38,7 @@
 
 
 <body>
+test
     <!-- Whatsapp floating -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <a href="https://wa.link/9ih9fc" class="float" target="_blank">
