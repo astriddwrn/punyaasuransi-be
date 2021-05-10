@@ -1,0 +1,105 @@
+.background-kontak .title{
+    width: fit-content;
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    position: absolute;
+    top: 80px;
+    left: 10%;
+    text-align: left;
+    text-shadow: 2px 2px 8px white;
+}
+
+
+.background-kontak{
+    background-image: url("/resources/background/background-kontak.jpg");
+    background-position: auto 800;
+    height: 100px;
+    width: 100%;
+    padding-top: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.kontak-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: relative;
+    top: -50px;
+}
+
+.kontak-container .box{
+    width: 400px;
+    background-color: white;
+    font-size: 15px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.kontak-container .box div{
+    margin: 10px;
+}
+
+.kontak-container .box .icon img{
+    width: 50px;
+}
+
+.kontak-container .box .rotate{
+    transform: rotate(-90deg);
+}
+
+
+.kontak-container .box .title{
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.kontak-container .box .text{
+    /* font-weight: lighter; */
+}
+
+.kontak-container .box .via{
+    font-weight: bold;
+}
+
+.informasi-container{
+    display: flex;
+    flex-direction: row;
+    max-width: 70%;
+    margin: 30px auto;
+    border: 20px solid #01434d;
+    padding: 20px;
+    background-color: rgb(127, 190, 190);
+}
+
+.informasi-container .image img{
+    height: 230px;
+}
+
+.informasi-container .line{
+    width: 3px;
+    background-color: rgb(68, 68, 68);
+    margin: 0 10px;
+}
+
+.informasi-container .text{
+    text-align: left;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 768px){
+    .background-kontak .title{
+        /* font-size: 40px; */
+        width: min-content;
+    }
+    .informasi-container{
+        display: block;
+    }
+    .informasi-container .image img{
+        margin-bottom: 20px;
+    }
+}

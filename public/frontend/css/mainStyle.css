@@ -1,0 +1,569 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: inherit;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+    /* min-width: 1080px; */
+    width: 100%;
+  }
+
+body{
+    /* min-width: 1080px; */
+    width: 100%;
+    height: fit-content;
+}
+
+.float{
+	position:fixed;
+	width:80px;
+	height:80px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+    text-align:center;
+    font-size:45px;
+    box-shadow: 2px 2px 3px #999;
+    z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+#rowContainer{
+    height: fit-content;
+    width: 100%;
+    /* min-width: 1080; */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+#row{
+    height: fit-content;
+    background-color: rgb(240, 240, 240);
+    padding-bottom: 8px;
+    padding-top: 8px;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0px 7px 10px rgb(46, 46, 46);
+    position: relative;
+    
+}
+
+#mainnav li{
+    display: inline-block;
+    margin: auto 0;
+    margin-top: 10px;
+    margin-right: 10px;
+    height: fit-content;
+}
+
+#mainnavList{
+    display: block;
+    position: absolute;
+    right: 20px;
+    margin: 0 0;
+}
+
+#mainnavLogo{
+    float: left;
+    margin-left: 20px;
+}
+
+#mainnav li a{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: medium;
+    font-weight: bolder;
+    color: #007284;
+    letter-spacing: 1.8px;
+    line-height: 2;
+    margin-left: 30px;
+    padding: 0 0 3px 0;
+}
+
+#mainnav li a:hover{
+    color: #004752;
+}
+
+#mainnav .icon{
+    float: right;
+    margin: 0.5em 20px 0.5em 0;
+    display: none;
+}
+
+#mainnav .icon div{
+  width: 35px;
+  height: 3px;
+  background-color: black;
+  margin: 6px 0;
+  background-color: #007284;
+}
+
+
+
+/*main container*/
+#mainContainer{
+    width: 100%;
+    text-align: center;
+}
+
+#coverContainer{
+    /* min-width: 1080px; */
+    margin: 0 auto;
+    width: 100%;
+    /* max-height: 500px; */
+    /* display: flex; */
+    /* flex-direction: row; */
+    overflow: hidden;
+    height: 500px;
+}
+
+/* SLIDEE */
+/* .slideContainer{
+    background-color: #01434d;
+    width: 70%;
+    height: 100%;
+} */
+
+.slideContainer{
+    /* width: 70%; */
+    /* display: inline-block; */
+    margin: 0 auto;
+    position: relative;
+    height: 100%;
+    box-shadow: 0 30px 40px rgba(0,0,0,.1);
+    display: flex;
+    align-items: center;
+    background-color: rgb(211, 210, 210);
+}
+
+/* default to hide image  */
+.slideImage {
+    display: none; 
+    /* border-radius: 30px; */
+    box-shadow: 0 30px 40px rgba(0,0,0,.1);
+}
+
+.slideImage img{
+    width: 100%;
+   
+}
+
+/* next & prev buttons */
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    width: auto;
+    color: #FFA500;
+    font-weight: bold;
+    font-size: 50px;
+    /* margin-top: -45%; */
+    /* bottom: -45%; */
+    top: 45%;
+    padding: 16px;
+    outline: 0 none;
+}
+
+/* position next button to the right */
+.next{
+    right: 0;
+    transform: translate(0, -50%);
+}
+
+.prev{
+    left: 0%;
+    transform: translate(0, -50%);
+}
+
+.strip-container{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    /* transform: translate(0, 0); */
+}
+
+.strip{
+    height: 6px;
+    width: 40px;
+    background-color: #3030309e;
+    display: inline-block;
+    margin: 0;
+    transition: background-color 0.4s ease;
+}
+
+
+.activee, .strip:hover{
+    background-color: #FFA500;
+    cursor: pointer;
+}
+
+
+.fade {
+    animation-name: fade;
+    animation-duration: 5s;
+}
+  
+@keyframes fade {
+    from {opacity: 0.3}
+    to {opacity: 1}
+}
+
+#coverFormContainer{
+    background-color: #01434d;
+    /* width: 30%; */
+    /* height: 500px; */
+    /* padding-top: 40px; */
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 0;
+}
+
+#coverFormContainer .satu{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px 15px;
+    color: #F8B858;
+}
+
+#coverFormContainer .dua{
+    font-size: 20px;
+    padding: 5px;
+}
+
+#coverFormContainer .tiga{
+    font-size: 20px;
+    font-weight: bold;
+    /* text-decoration: underline; */
+    border: solid 1px;
+    padding: 5px;
+    width: fit-content;
+    margin: 0 auto;
+    letter-spacing: 2;
+}
+
+#coverFormContainer .empat{
+    padding: 15px;
+    font-size: 20px;
+    color: #ffe4bc;
+}
+
+/* form */
+/* #coverFormTitle{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#coverForm{
+    height: fit-content;
+    width: 100%;
+    text-align: left;
+    padding: 20px 40px;
+}
+
+#CoverFormContainer label{
+    font-size: large;
+}
+
+#CoverFormContainer input{
+    margin: 8px 0;
+    width: 300px;
+    height: 25px;
+}
+
+#coverFormContainer select{
+    margin: 8px 0;
+    height: 25px;
+    width: 300;
+    color: black;
+}
+
+#coverFormContainer button{
+    height: 25px;
+    margin-left: 200;
+    width: 100px;
+    margin-top: 10px;
+    color: black;
+} */
+
+#apaContainer{
+    height: fit-content;
+    width: 100%;
+    /* min-width: 1080px; */
+    padding: 60px 0px;
+    background-color: #01434d;
+}
+
+#apaContainer #box{
+    width: 70%;
+    height: fit-content;
+    display: inline-block;
+    margin: 0 auto;
+    background-color: #F8B858;
+    padding: 20px 0;
+}
+
+#apaContainer #box #title{
+    font-size: 50px;
+    font-weight: bold;
+    color:  #01434d;
+}
+
+#apaContainer #box #content{
+    line-height: 1.5;
+    margin: 20px 0;
+    padding: 0 40px;
+}
+
+#manfaatContainer{
+    background-image: url("../resources/background/allianz\ flag.jpg");
+    background-size: cover;
+    height: fit-content;
+    background-attachment: fixed;
+    padding: 60 20;
+    background-repeat: no-repeat;
+}
+
+#manfaatContainer #title{
+    font-size: 45px;
+    font-weight: bold;
+    color:  white;
+    background-color: #01434d ;
+    width: fit-content;
+    height: fit-content;
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#manfaatContainer .box{
+    background-color: #007284;
+    color: white;
+    width: 70%;
+    height: fit-content;
+    border-radius: 10px;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+#manfaatContainer .box .title{
+    font-size: 25px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+#manfaatContainer .box .content{
+    padding: 0 20px;
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+#produkContainer{
+    height: fit-content;
+    width: 100%;
+    /* min-width: 1080px; */
+    padding: 3px 0;
+    padding-bottom: 100px;
+    background-color: white;
+    /* background-image: url("/resources/background/building.jpg"); */
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+#produkContainer #title{
+    padding: 10px 15px;
+    font-size: 5vw;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color:  #327781;
+    text-shadow:
+		-2px -2px 0 rgb(255, 255, 255),
+		2px -2px 0 rgb(255, 255, 255),
+		-2px 2px 0 rgb(255, 255, 255),
+		2px 2px 0 rgb(255, 255, 255);
+}
+
+#produkContainer #subContainer{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+#produkContainer #subContainer .box{
+    margin: 0 30px;
+    /* border-color: #c9c9c9 ;
+    border-width: 5px;
+    border-style: solid; */
+    padding: 20px;
+    width: 250px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+#produkContainer #subContainer .box:hover{
+    background-color:#ffe4bc;
+}
+
+#produkContainer #subContainer .box .content{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #007284;
+}
+
+#footerContainer{
+    width: 100%;
+    /* min-width: 1080px; */
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #01262c;
+    justify-content: center;
+}
+
+#footerContainer .box{
+    width: 350px;
+    height: fit-content;
+    padding: 30px;
+    /* margin: 30px; */
+}
+
+#footerContainer .box .title{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color:  rgb(207, 206, 206);
+}
+
+#footerContainer .content{
+    color: rgb(165, 165, 165);
+}
+
+#footerContainer .lembagaimg{
+    display: inline-block;
+}
+
+#footerContainer #description{
+    font-size: 14px;
+}
+
+#footerContainer .socmed{
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    height: fit-content;
+    width: 100%;
+}
+
+#footerContainer .socmed div{
+    margin-right: 10px;
+}
+
+#footerContainer .contactList{
+    margin-bottom: 5px;
+}
+
+#copyrightContainer{
+    width: 100%;
+    /* min-width: 1080; */
+    height: fit-content;
+    background-color: black;
+}
+
+#copyrightContainer div{
+    color: gray;
+    display: inline-block;
+    margin: 20px auto;
+    text-align: center;
+    align-self: center;
+    width: 100%;
+}
+
+
+
+/* ////////////// RESPONSIVE //////////// */
+@media screen and (max-width: 768px){
+
+    #mainnavList{
+        display: none;
+        flex-direction: column;
+        margin: 50px 0 0 0;
+        text-align: right;
+    }
+
+    #mainnav .icon{
+        display: block;
+    }
+
+    #coverContainer{
+        height: fit-content;
+    }
+
+    .slideContainer{
+        height: 200px;
+    }
+
+    #coverFormContainer{
+        padding: 15px 0;
+    }
+
+
+    #produkContainer{
+        padding: 15px 0;
+    }
+    #produkContainer #title{
+        font-size: 30px;
+    }
+
+
+    #apaContainer #box{
+        width: 90%;
+    }
+    #apaContainer #box #title{
+        font-size: 35px;
+    }
+    #apaContainer #box #content{
+        padding: 0 25px;
+    }
+
+
+    #manfaatContainer #title{
+        font-size: 35px;
+    }
+    #manfaatContainer .box{
+        width: 95%;
+    }
+    #manfaatContainer .box .title{
+        font-size: 20px;
+    }
+    #manfaatContainer .box .content{
+        padding: 0 10px;
+    }
+
+
+    #copyrightContainer div{
+        font-size: x-small;
+    }
+}
+

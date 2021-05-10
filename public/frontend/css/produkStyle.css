@@ -1,0 +1,153 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: inherit;
+}
+
+.titleContainer{
+    height: fit-content;
+    width: 100%;
+    padding-top: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.background1{
+    background-image: url("/resources/background/keluarga\ 1.jpg");
+}
+
+.background2{
+    background-image: url("/resources/background/keluarga\ 2.jpg");
+}
+
+.background3{
+    background-image: url("/resources/background/keluarga\ 3.jpg");
+}
+.background4{
+    background-image: url("/resources/background/keluarga\ 4.jpg");
+}
+.background5{
+    background-image: url("/resources/background/keluarga\ 5.jpg");
+}
+
+.titleContainer #title{
+    font-size: 50px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    color: #01434d;
+    text-shadow: 2px 2px 8px white;
+}
+
+#macamContainer{
+    height: fit-content;
+    width: 100%;
+    background-color: white;
+}
+
+#macamContainer #title{
+    font-size: 30px;
+    font-weight: bold;
+    color:  #F8B858;
+    padding: 20px;
+    margin-bottom: 0px;
+}
+
+#listContainer{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    justify-content: center;
+}
+
+#listContainer .list{
+    margin: 30px;
+    height: 50px;
+    padding: 10px 10px;
+    min-height: 35px;
+    width: 400px;
+}
+
+#listContainer .list .nama{
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+#listContainer .list .link{
+    color: #01434d;
+    background-color: #F8B858;
+    width: fit-content;
+    padding: 7px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+#listContainer .list .link:hover{
+    background-color: #d39d4b;
+}
+
+.container {
+    height: fit-content;
+    width: 100%;
+    overflow: hidden;
+}
+
+.container .title{
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    padding: 40px;
+    overflow: hidden;
+}
+
+.container .description{
+    font-size: medium;
+    padding: 0 100px;
+    overflow: hidden;
+}
+
+.container .subtitle{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.container .listContainer{
+    width: 100%;
+    height: fit-content;
+    padding: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.container .listSubcontainer{
+    padding: 10px;
+    width: 300px;
+    height: fit-content;
+    margin: 10px auto;
+}
+
+.container .listTitle{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.container .listDescription{
+    font-size: small;
+}
+
+footer{
+    text-align: left;
+}

@@ -1,0 +1,22 @@
+.background-tentang{
+    background-image: url("/resources/background/background-tentang.jpg");
+    background-position: auto 800;
+}
+
+/* .titleContainer #title{
+    color: white;
+    text-shadow: unset;
+} */
+
+.tentang .text-container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.tentang .text{
+    text-align: left;
+    padding: 10px 0;
+}
